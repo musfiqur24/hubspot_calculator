@@ -1,8 +1,6 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/install", "destination": "/api/install" },
-    { "source": "/oauth-callback", "destination": "/api/oauth-callback" },
-    { "source": "/hubspot/action", "destination": "/api/hubspot/action" }
+    { "source": "/(.*)", "destination": "/api/index.js" }
   ]
 }
